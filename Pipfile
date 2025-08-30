@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+pypdf2 = "*"
+celery = {extras = ["redis"], version = "*"}
+google-generativeai = "*"
+psycopg2-binary = "*"
+djoser = "*"
+djangorestframework-simplejwt = "*"
+django-cors-headers = "*"
+python-dotenv = "*"
+sarvamai = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
