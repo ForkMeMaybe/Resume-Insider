@@ -48,7 +48,6 @@ def generate_insights_from_document(document_id: int):
     except Exception as e:
         print(f"AI processing failed, running fallback: {e}")
         try:
-            # Clean and tokenize the text
             words = re.findall(r"\b\w+\b", text_content.lower())
             word_counts = Counter(words)
             top_words = [word for word, count in word_counts.most_common(5)]
