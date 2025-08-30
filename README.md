@@ -31,7 +31,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone 
+git clone https://github.com/ForkMeMaybe/Resume-Insider.git 
 cd Resume-Insider
 ```
 
