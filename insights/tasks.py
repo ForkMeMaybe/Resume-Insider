@@ -6,6 +6,8 @@ from celery import shared_task
 
 from documents.models import Document
 from .models import Insight
+import google.generativeai as genai
+import os
 
 
 @shared_task
@@ -25,9 +27,6 @@ def generate_insights_from_document(document_id: int):
                 text_content += page.extract_text()
 
         insight.processed_text = text_content
-
-        import google.generativeai as genai
-        import os
 
         api_key = os.environ.get("GEMINI_API_KEY")
         if not api_key:
